@@ -1,0 +1,22 @@
+* {
+  list-style-type: none;
+}
+/* head display */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 8px 24px 24px 24px;
+  font-size: 24px;
+}
+/* main body display */
+.bulk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 30vw auto 30vw;
+  background-color: gray;
+  font-size: 36px;
+  border-radius: 20px;
+}
