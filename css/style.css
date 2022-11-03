@@ -1,4 +1,5 @@
 /* head display */
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -6,6 +7,7 @@
   margin: 8px 24px 24px 24px;
   font-size: 24px;
 }
+
 /* main body display */
 
 .bulk {
@@ -14,12 +16,8 @@
   margin: 10px 30vw auto 30vw;
   background-color: gray;
   border-radius: 32px;
-  min-height: 50vh;
+  min-height: 600px;
   min-width: 40vw;
-}
-
-#hide {
-  display: none;
 }
 
 /* First card */
@@ -28,6 +26,10 @@
   display: flex;
   align-self: center;
   font-size: 42px;
+  font-weight: bold;
+  height: 100%;
+  width: 100%;
+  padding-left: 18%;
 }
 
 /* Quiz cards */
@@ -51,17 +53,22 @@
   font-size: 24px;
 }
 
-#a1,
-#a2,
-#a3,
-#a4 {
+.answer {
   background-color: rgba(255, 68, 0, 0.719);
   padding: 10px;
   min-height: 40px;
   border-radius: 10px;
+  border: 1px solid rgba(255, 68, 0, 0.719);
+  margin: 0.5rem;
+}
+
+.answer:hover {
+  background-color: rgba(255, 68, 0, 0.308);
+  border: 1px solid black;
 }
 
 /* Scoreboard card */
+
 .scoreboard {
   display: flex;
   flex-direction: column;
@@ -75,4 +82,9 @@
 
 .input {
   font-size: 24px;
+}
+
+/* Hide elements */
+.hide {
+  display: none;
 }
