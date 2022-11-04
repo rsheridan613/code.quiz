@@ -1,3 +1,7 @@
+:root {
+  --orange: rgb(216, 58, 0);
+  --darker: rgb(185, 71, 29);
+}
 /* head display */
 
 .header {
@@ -8,12 +12,24 @@
   font-size: 24px;
 }
 
+#view,
+#timer {
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  border-radius: 5px;
+}
+
+#view:hover {
+  background-color: var(--darker);
+  border: 1px solid black;
+}
+
 /* main body display */
 
 .bulk {
   display: flex;
-  justify-content: center;
-  margin: 10px 30vw auto 30vw;
+  justify-content: space-between;
+  margin: 10px 30vw 10px 30vw;
   background-color: gray;
   border-radius: 32px;
   min-height: 600px;
@@ -27,9 +43,10 @@
   align-self: center;
   font-size: 42px;
   font-weight: bold;
-  height: 100%;
   width: 100%;
   padding-left: 18%;
+  background-color: var(--orange);
+  border-radius: 20px;
 }
 
 /* Quiz cards */
@@ -45,25 +62,23 @@
   margin: 5px;
 }
 
-#answers {
+.answer {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   font-size: 24px;
-}
-
-.answer {
-  background-color: rgba(255, 68, 0, 0.719);
   padding: 10px;
   min-height: 40px;
+  min-width: 200px;
+  background-color: var(--orange);
   border-radius: 10px;
-  border: 1px solid rgba(255, 68, 0, 0.719);
+  border: 1px solid var(--orange);
   margin: 0.5rem;
 }
 
 .answer:hover {
-  background-color: rgba(255, 68, 0, 0.308);
+  background-color: var(--darker);
   border: 1px solid black;
 }
 
