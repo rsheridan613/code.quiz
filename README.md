@@ -9,3 +9,6 @@ Wrong answers reduce time. Click "View Highscores" to jump directly to score pag
 
 ## Visuals
 
+![Screenshot of website]Screenshot_20221103_085752.png
+
+https://rsheridan613.github.io/code.quiz/
